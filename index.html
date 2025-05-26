@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper - Modern Edition</title>
+    <meta name="description" content="A beautiful, modern take on the classic Minesweeper game">
+    <meta name="author" content="Minesweeper Modern">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="container">
+        <header class="game-header">
+            <h1 class="game-title">
+                <span class="title-icon">💎</span>
+                Minesweeper
+                <span class="title-subtitle">Modern Edition</span>
+            </h1>
+        </header>
+
+        <div class="game-controls">
+            <div class="control-group">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty" class="difficulty-select">
+                    <option value="easy">Easy (9x9, 10 mines)</option>
+                    <option value="medium" selected>Medium (16x16, 40 mines)</option>
+                    <option value="hard">Hard (30x16, 99 mines)</option>
+                </select>
+            </div>
+            
+            <div class="game-stats">
+                <div class="stat-item">
+                    <span class="stat-icon">💣</span>
+                    <span class="stat-value" id="mines-count">40</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-icon">⏱️</span>
+                    <span class="stat-value" id="timer">000</span>
+                </div>
+            </div>
+
+            <button id="new-game" class="new-game-btn">
+                <span class="btn-icon">🎮</span>
+                New Game
+            </button>
+        </div>
+
+        <div class="game-board-container">
+            <div id="game-board" class="game-board"></div>
+        </div>
+
+        <div class="game-status" id="game-status">
+            <div class="status-message">Click a cell to start!</div>
+        </div>
+    </div>
+
+    <div class="particles-container" id="particles"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
