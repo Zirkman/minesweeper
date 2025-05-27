@@ -4,7 +4,7 @@ A beautiful, modern take on the classic Minesweeper game with stunning visual ef
 
 ## 🎮 Live Demo
 
-[Play the game here!](https://yourusername.github.io/minesweeper)
+[Play the game here!]([https://yourusername.github.io/minesweeper](https://zirkman.github.io/minesweeper/))
 
 ## ✨ Features
 
